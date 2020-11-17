@@ -40,6 +40,7 @@ full_image_elem = browser.find_by_id('full_image')
 full_image_elem.click()
 
 # Find the more info button and click that
+browser.is_element_present_by_text('more info', wait_time=1)
 more_info_elem = browser.links.find_by_partial_text('more info')
 more_info_elem.click()
 
